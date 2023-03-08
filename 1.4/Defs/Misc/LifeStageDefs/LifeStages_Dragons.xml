@@ -2,7 +2,7 @@
 <Defs>
   
   <LifeStageDef>
-    <defName>FirstbornSangheiliStage</defName>
+    <defName>FirstbornWesternStage</defName>
     <label>Firstborn</label>
     <bodySizeFactor>0.2</bodySizeFactor>
     <healthScaleFactor>0.2</healthScaleFactor>
@@ -14,7 +14,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>YoungSangheiliStage</defName>
+    <defName>YoungWesternStage</defName>
     <label>young</label>
     <bodySizeFactor>0.5</bodySizeFactor>
     <healthScaleFactor>0.5</healthScaleFactor>
@@ -26,14 +26,14 @@
   </LifeStageDef>
 
    <LifeStageDef>
-    <defName>TeenSangheiliStage</defName>
+    <defName>TeenWesternStage</defName>
     <label>teenage stage</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>AdultSangheiliStage</defName>
+    <defName>AdultWesternStage</defName>
     <label>adult stage</label>
     <visible>false</visible>
     <reproductive>true</reproductive>

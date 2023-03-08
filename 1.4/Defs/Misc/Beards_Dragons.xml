@@ -2,13 +2,13 @@
 <Defs>
 
   <BeardDef>
-    <defName>Sangheili_Beard_Blank</defName>
-    <label>SangheiliBeard</label>
+    <defName>Western_Beard_Blank</defName>
+    <label>WesternNoBeard</label>
     <styleGender>Any</styleGender>
     <texPath>Things/Mote/Transparent</texPath>
     <iconPath>Things/Mote/Transparent</iconPath>
 		<styleTags>
-			<li>SangheiliBeard</li>
+			<li>NoDragonBeard</li>
 		</styleTags>
   </BeardDef>		
 		

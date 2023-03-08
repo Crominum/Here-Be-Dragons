@@ -3,8 +3,8 @@
 
 
   <BodyDef>
-    <defName>Sangheili</defName>
-    <label>Sangheili</label>
+    <defName>SimplyWestern</defName>
+    <label>Western Dragon</label>
     <corePart>
       <def>Torso</def>
       <height>Middle</height>

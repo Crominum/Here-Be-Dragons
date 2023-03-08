@@ -2,7 +2,7 @@
 
 <Defs>
   <FleshTypeDef>
-    <defName>Sangheili</defName>
+    <defName>SimplyWestern</defName>
 	<ateDirect>AteHumanlikeMeatDirect</ateDirect>
 	<ateAsIngredient>AteHumanlikeMeatAsIngredient</ateAsIngredient>
 	<corpseCategory>CorpsesHumanlike</corpseCategory>
@@ -10,11 +10,11 @@
     <genericWounds>
       <li>
         <texture>Things/Pawn/Wounds/WoundA</texture>
-        <color>40,16,81</color>
+        <color>168,2,1</color>
       </li>
       <li>
         <texture>Things/Pawn/Wounds/WoundB</texture>
-        <color>39,15,85</color>
+        <color>166,4,1</color>
       </li>
       <li>
         <texture>Things/Pawn/Wounds/WoundC</texture>

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BaseFilth">
-    <defName>FilthBloodSangheili</defName>
+    <defName>FilthBloodDragon</defName>
     <label>blood</label>
     <statBases>
       <Beauty>-14</Beauty>
@@ -10,7 +10,7 @@
     </statBases>
     <graphicData>
       <texPath>Things/Filth/Spatter</texPath>
-      <color>(40, 16, 81, 180)</color>
+      <color>(168, 2, 1, 180)</color>
     </graphicData>
     <filth>
       <rainWashes>true</rainWashes>

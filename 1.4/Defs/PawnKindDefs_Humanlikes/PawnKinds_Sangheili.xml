@@ -3,15 +3,15 @@
 
   <!-- ============================ Sangheili Base ========================== -->
 
-  <PawnKindDef Name="SangheiliBase" Abstract="True">
+  <PawnKindDef Name="WesternDragonBase" Abstract="True">
     <defaultFactionType>SangheiliFaction</defaultFactionType>
-    <race>Alien_Sangheili</race>
-    <nameMaker>NamerSangheiliMale</nameMaker>
-    <nameMakerFemale>NamerSangheiliFemale</nameMakerFemale>
+    <race>SimplyWestern</race>
+    <nameMaker>NamerWesternMale</nameMaker>
+    <nameMakerFemale>NamerWesternFemale</nameMakerFemale>
     <backstoryFilters>
       <li>
         <categories>
-          <li>SangheiliBackstory</li>
+          <li>WesternDragonBackstory</li>
         </categories>
         <commonality>0.8</commonality>
       </li>
@@ -30,29 +30,16 @@
     </backstoryFilters>
 	
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
-	 <!-- 
-	 
-	 <weaponTags>
-      <li>NonNeolithicOnlyMelee</li>
-      <li>MedievalMeleeBasic</li>
-	  <li>MedievalMeleeDecent</li>
-	  <li>MedievalMeleeAdvanced</li>
-	  <li>Gun</li>
-	  <li>GunHeavy</li>
-	  <li>IndustrialGunAdvanced</li>
-	  <li>SpacerGun</li>
-    </weaponTags> 
-	
-	-->
+
     <initialWillRange>1~3</initialWillRange>
 	<initialResistanceRange>11~18</initialResistanceRange>
   </PawnKindDef>
   
   <!-- ============================ Sangheili Civilian Base ========================== -->
 
-  <PawnKindDef Name="SangheiliCivBase" ParentName="SangheiliBase" Abstract="True">
+  <PawnKindDef Name="WesternCivBase" ParentName="WesternDragonBase" Abstract="True">
     <combatPower>25</combatPower>
-	<race>Alien_Sangheili</race>
+	  <race>SimplyWestern</race>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>
@@ -71,7 +58,6 @@
 	  <li>SimpleGun</li>
       <li>NonNeolithicOnlyMelee</li>
       <li>MedievalMeleeBasic</li>
-	    <li>Covenant_PlasmaPistol</li>
     </weaponTags>
 	<apparelTags>
 	    <li>Outlander</li>
@@ -112,23 +98,21 @@
 	<initialResistanceRange>11~18</initialResistanceRange>
   </PawnKindDef>
   
-  <!-- ============================ Sangheili Civilians ========================== -->
+  <!-- ============================ Western Dragon Civilians ========================== -->
   
-  <PawnKindDef ParentName="SangheiliCivBase">
-    <defName>SangheiliColonist</defName>
+  <PawnKindDef ParentName="WesternCivBase">
+    <defName>WesternColonist</defName>
     <label>colonist</label>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="SangheiliCivBase">
-    <defName>SangheiliKaidon</defName>
-	<label>Kaidon</label>
-	<minGenerationAge>40</minGenerationAge>
+  <PawnKindDef ParentName="WesternCivBase">
+    <defName>WesternDragonKing</defName>
+	<label>King</label>
+	<minGenerationAge>200</minGenerationAge>
     <factionLeader>true</factionLeader>
 	<initialResistanceRange>15~25</initialResistanceRange>
     <apparelTags>
 			<li>SangheiliUnderArmor</li>
-      <li>BeltDefense</li>
-	    <li>SangheiliUltraArmor</li>
     </apparelTags>
     <apparelMoney>
       <min>5000</min>

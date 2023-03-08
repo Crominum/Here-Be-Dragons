@@ -2,11 +2,11 @@
 <Defs>
 
   <CultureDef>
-    <defName>SangheiliCulture</defName>
-    <label>Sangheili</label>
+    <defName>WesternDragonCulture</defName>
+    <label>Western Dragons</label>
     <description>A developing and shifting culture of post Great Schism events.</description>
-    <pawnNameMaker>NamerSangheiliMale</pawnNameMaker>
-      <pawnNameMakerFemale>NamerSangheiliFemale</pawnNameMakerFemale>
+    <pawnNameMaker>NamerWesternMale</pawnNameMaker>
+      <pawnNameMakerFemale>NamerWesternFemale</pawnNameMakerFemale>
     <iconPath>World/WorldObjects/Expanding/Village</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>

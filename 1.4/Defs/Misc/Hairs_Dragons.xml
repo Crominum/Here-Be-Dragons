@@ -2,12 +2,12 @@
 <Defs>
 
   <HairDef>
-    <defName>Sangheili_Hair_Blank</defName>
-    <label>no hair</label>
+    <defName>Dragon_Horn_Blank</defName>
+    <label>No Horns</label>
     <hairGender>Any</hairGender>
     <texPath>Things/Pawn/Humanlike/Hairs/HairBlank</texPath>
 		<hairTags>
-			<li>SangheiliHair</li>
+			<li>DragonHorns</li>
 		</hairTags>
   </HairDef>
  

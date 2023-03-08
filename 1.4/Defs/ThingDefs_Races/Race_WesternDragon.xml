@@ -1,128 +1,108 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>Alien_Sangheili</defName>
-    <label>Sangheili</label>
-    <description>The Sangheili are a species of strong, proud, and intelligent warriors, as well as skilled combat tacticians. Humanoid and reptilian in body structure, they sport quadruple hinged mandibles with conical teeth as well as a binary vascular system.</description>
+    <defName>SimplyWestern</defName>
+    <label>Western Dragon</label>
+    <description>Sharp dragons with wings, being the jack of all trades of the dragon species.</description>
     <alienRace>
       <generalSettings>
-            <maleGenderProbability>0.6</maleGenderProbability>
+            <maleGenderProbability>0.7</maleGenderProbability>
             <immuneToAge>true</immuneToAge>
 
 			  <disallowedTraits>
-				<li>
-					<defName>Greedy</defName>
-				</li>
-				<li>
-					<defName>Jealous</defName>
-				</li>
-				<li>
-					<defName>AnnoyingVoice</defName>
-				</li>
-				<li>
-					<defName>Pyromaniac</defName>
-				</li>
-				<li>
-					<defName>Wimp</defName>
-				</li>
-				<li>
-					<defName>DrugDesire</defName>
-				</li>
 			  </disallowedTraits>
 			
             <alienPartGenerator>
                 <headTypes Inherit="False">
                     <li>Female_AverageNormal</li>
 					          <li>Female_AverageWide</li>
-					          <li>Female_AveragePointy</li>
 					          <li>Male_AverageNormal</li>
 					          <li>Male_AverageWide</li>
-					          <li>Male_AveragePointy</li>
                 </headTypes>
                 <bodyTypes>
 					          <li>Hulk</li>
 					          <li>Female</li>
 					          <li>Male</li>
                 </bodyTypes>
-				<customDrawSize>(1.25, 1.25)</customDrawSize>
+				<customDrawSize>(1.15, 1.15)</customDrawSize>
 				<customHeadDrawSize>(1.10, 1.10)</customHeadDrawSize>
-				<headOffset>(0, 0.03)</headOffset>
+				<headOffset>(0, 0)</headOffset>
 				<colorChannels>
 				  <li>
 					  <name>skin</name>
 						<first Class="ColorGenerator_Options">
 							<options>
 								<li>
-									<weight>1</weight>
-									<only>RGB(0.9, 0.9, 0.9)</only>
-								</li>
-								<li>
-									<weight>2</weight>
-									<only>RGB(0.8, 0.8, 0.8)</only>
-								</li>
-								<li>
-									<weight>4</weight>
-									<only>RGB(0.7, 0.7, 0.7)</only>
-								</li>
-								<li>
-									<weight>5</weight>
-									<only>RGB(0.6, 0.6, 0.6)</only>
-								</li>
-								<li>
-									<weight>6</weight>
-									<only>RGB(0.5, 0.5, 0.5)</only>
-								</li>
-								<li>
-									<weight>5</weight>
-									<only>RGB(0.4, 0.4, 0.4)</only>
-								</li>
-								<li>
-									<weight>4</weight>
-									<only>RGB(0.3, 0.3, 0.3)</only>
+									<weight>3</weight>
+									<only>RGB(0.32, 0.22, 0.09)</only> <!--1Brown-->
 								</li>
 								<li>
 									<weight>3</weight>
-									<only>RGB(0.2, 0.2, 0.2)</only>
-								</li>
-								<li>
-									<weight>1</weight>
-									<only>RGB(0.1, 0.1, 0.1)</only>
-								</li>
-								<li>
-									<weight>0.5</weight>
-									<only>RGB(0.84, 0.73, 0.69)</only>
-								</li>
-								<li>
-									<weight>0.5</weight>
-									<only>RGB(0.79, 0.69, 0.58)</only>
-								</li>
-								<li>
-									<weight>0.5</weight>
-									<only>RGB(0.78, 0.6, 0.54)</only>
-								</li>
-								<li>
-									<weight>0.5</weight>
-									<only>RGB(0.70, 0.55, 0.52)</only>
-								</li>
-								<li>
-									<weight>2</weight>
-									<only>RGB(0.48, 0.36, 0.32)</only>
-								</li>
-								<li>
-									<weight>1</weight>
-									<only>RGB(0.38, 0.26, 0.21)</only>
-								</li>
-								<li>
-									<weight>1</weight>
-									<only>RGB(0.3, 0.2, 0.19)</only>
+									<only>RGB(0.19, 0.14, 0.07)</only> <!--2Dark Brown-->
 								</li>
 								<li>
 									<weight>3</weight>
-									<only>RGB(0.25, 0.12, 0.07)</only>
+									<only>RGB(0.25, 0.18, 0.15)</only> <!--3Low Dark Brown-->
+								</li>
+								<li>
+									<weight>3</weight>
+									<only>RGB(0.27, 0.51, 0.19)</only> <!--4Olive Green-->
+								</li>
+								<li>
+									<weight>3</weight>
+									<only>RGB(0.27, 0.36, 0.24)</only> <!--5Muted Green-->
+								</li>
+								<li>
+									<weight>3</weight>
+									<only>RGB(0.23, 0.35, 0.18)</only> <!--6Muted Dark Green-->
+								</li>
+								<li>
+									<weight>3</weight>
+									<only>RGB(0.5, 0.21, 0.15)</only> <!--7Brown Red-->
+								</li>
+								<li>
+									<weight>3</weight>
+									<only>RGB(0.49, 0.19, 0.11)</only> <!--8Vibrant Brown Red-->
+								</li>
+								<li>
+									<weight>3</weight>
+									<only>RGB(0.43, 0.05, 0.05)</only> <!--9Dark Red-->
+								</li>
+								<li>
+									<weight>1</weight>
+									<only>RGB(0.79, 0.0, 0.1)</only> <!--10 Bright Red-->
+								</li>
+								<li>
+									<weight>1</weight>
+									<only>RGB(0.05, 0.6, 0.0)</only> <!--11 Bright Green-->
+								</li>
+								<li>
+									<weight>1</weight>
+									<only>RGB(0.58, 0.15, 0.0)</only> <!--12Vibrant Brown-->
 								</li>
 								<li>
 									<weight>0.5</weight>
-									<only>RGB(0.18, 0.09, 0.06)</only>
+									<only>RGB(0.06, 0.25, 0.74)</only> <!--13Vibrant Blue-->
+								</li>
+								<li>
+									<weight>0.5</weight>
+									<only>RGB(0.95, 0.43, 0.07)</only> <!--14Vibrant Orange-->
+								</li>
+								<li>
+									<weight>0.5</weight>
+									<only>RGB(0.09, 0.09, 0.09)</only> <!--15Black-->
+								</li>
+								<li>
+									<weight>0.1</weight>
+									<only>RGB(0.3, 0.05, 0.41)</only> <!--16Purple-->
+								</li>
+								<li>
+									<weight>0.1</weight>
+									<only>RGB(0.95, 0.95, 0.95)</only> <!--17White-->
+								</li>
+								<li>
+									<weight>0.1</weight>
+									<only>RGB(0.52, 0.05, 0.24)</only> <!--18Pink Red-->
 								</li>
 							</options>
 						</first>
@@ -156,8 +136,8 @@
       </generalSettings>
         <graphicPaths>
                 <skinShader>Cutout</skinShader>
-                <head>Things/Pawn/Humanlike/Sangheili/Head/</head>
-				        <body>Things/Pawn/Humanlike/Sangheili/Body/</body>
+                <head>Things/Pawn/Humanlike/Western/Head/</head>
+				        <body>Things/Pawn/Humanlike/Western/Body/</body>
         </graphicPaths>
       <styleSettings>
         <li>
@@ -200,13 +180,7 @@
 		</thoughtSettings>
 		<raceRestriction>
 			<apparelList>
-				<li>MinorArmor</li>
-				<li>MinorHelm</li>
-				<li>MajorArmor</li>
-				<li>MajorHelm</li>
-				<li>UltraArmor</li>
-				<li>UltraHelm</li>
-				<li>SangUndersuit</li>
+
 			</apparelList>
       <blackApparelList>
         <li>Apparel_BowlerHat</li>
@@ -238,35 +212,35 @@
 			<researchList>
 				<li>
 					<projects>
-						<li>SangArmor</li>
+
 					</projects>
 				</li>
 			</researchList>
 		</raceRestriction>
     </alienRace>
 	  <statBases>
-    		<MarketValue>1750</MarketValue>
-    		<MoveSpeed>6</MoveSpeed>
-    		<MiningSpeed>1.0</MiningSpeed>
-    		<HuntingStealth>0.50</HuntingStealth>
-    		<Flammability>0.6</Flammability>
+    		<MarketValue>2000</MarketValue>
+    		<MoveSpeed>5.5</MoveSpeed>
+    		<MiningSpeed>1.5</MiningSpeed>
+    		<HuntingStealth>0.70</HuntingStealth>
+    		<Flammability>0.5</Flammability>
     		<ComfyTemperatureMin>0</ComfyTemperatureMin>
-    		<ComfyTemperatureMax>60</ComfyTemperatureMax>
+    		<ComfyTemperatureMax>45</ComfyTemperatureMax>
     		<ToxicResistance>0.5</ToxicResistance>
     		<PsychicSensitivity>0.5</PsychicSensitivity>
-    		<PainShockThreshold>.9</PainShockThreshold>
+    		<PainShockThreshold>0.5</PainShockThreshold>
     		<MentalBreakThreshold>0.20</MentalBreakThreshold>
-    		<SocialImpact>0.5</SocialImpact>
-    		<GlobalLearningFactor>1.4</GlobalLearningFactor>
-    		<ImmunityGainSpeed>4</ImmunityGainSpeed>
+    		<SocialImpact>1</SocialImpact>
+    		<GlobalLearningFactor>1.5</GlobalLearningFactor>
+    		<ImmunityGainSpeed>1.5</ImmunityGainSpeed>
     		<LeatherAmount>10</LeatherAmount>
     		<MeatAmount>120</MeatAmount>
-    		<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-    		<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-    		<ArmorRating_Heat>0.70</ArmorRating_Heat>
-    		<CarryingCapacity>125</CarryingCapacity>
+    		<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+    		<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+    		<ArmorRating_Heat>0.90</ArmorRating_Heat>
+    		<CarryingCapacity>100</CarryingCapacity>
     		<Mass>90.0</Mass>
-    		<ResearchSpeed>2</ResearchSpeed>
+    		<ResearchSpeed>1.5</ResearchSpeed>
 	  </statBases>
       <tools>
       <li>
@@ -275,7 +249,7 @@
 			<li>Blunt</li>
 			<li>Scratch</li>
         </capacities>
-        <power>35</power>
+        <power>16</power>
         <cooldownTime>1.2</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -293,7 +267,7 @@
           <li>Blunt</li>
 		  <li>Scratch</li>
         </capacities>
-        <power>35</power>
+        <power>16</power>
         <cooldownTime>1.2</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -322,12 +296,12 @@
         <intelligence>Humanlike</intelligence>
         <makesFootprints>true</makesFootprints>
         <lifeExpectancy>150</lifeExpectancy>
-        <leatherDef>Leather_Sangheili</leatherDef>
-	      <nameGenerator>NamerSangheiliMale</nameGenerator>
-        <nameGeneratorFemale>NamerSangheiliFemale</nameGeneratorFemale> 
-        <body>Sangheili</body>
-        <bloodDef>FilthBloodSangheili</bloodDef>	
-        <meatColor>(40, 16, 81)</meatColor>
+        <leatherDef>Leather_Dragon</leatherDef>
+	      <nameGenerator>NamerWesternMale</nameGenerator>
+        <nameGeneratorFemale>NamerWesternFemale</nameGeneratorFemale> 
+        <body>WesternDragon</body>
+        <bloodDef>FilthBloodDragon</bloodDef>	
+        <meatColor>(170, 60, 59)</meatColor>
         <baseBodySize>1.3</baseBodySize>
         <baseHealthScale>1.5</baseHealthScale>
         <foodType>OmnivoreHuman</foodType>
@@ -342,20 +316,20 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>FirstbornSangheiliStage</def>
+          <def>FirstbornWesternStage</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>YoungSangheiliStage</def>
+          <def>YoungWesternStage</def>
           <minAge>4</minAge>
         </li>
 		      <li>
-            <def>TeenSangheiliStage</def>
+            <def>TeenWesternStage</def>
             <minAge>10</minAge>
           </li>
           <li>
-            <def>AdultSangheiliStage</def>
-            <minAge>25</minAge>
+            <def>AdultWesternStage</def>
+            <minAge>18</minAge>
           </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -373,10 +347,10 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,70)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
           <li>(14,0)</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,90)</li>
-          <li>(25,50)</li>
-          <li>(100,30)</li>
-          <li>(125,5)</li>
-          <li>(150,0)</li>
+          <li>(25,30)</li>
+          <li>(200,50)</li>
+          <li>(300,5)</li>
+          <li>(500,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
@@ -415,7 +389,7 @@
 </AlienRace.ThingDef_AlienRace>
 
 <AlienRace.RaceSettings>
-    <defName>Sangheili_Settings</defName>
+    <defName>Western_Settings</defName>
 		<pawnKindSettings>
             <alienrefugeekinds>
                 <li>

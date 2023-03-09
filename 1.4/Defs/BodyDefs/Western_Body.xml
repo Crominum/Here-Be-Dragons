@@ -3,7 +3,7 @@
 
 
   <BodyDef>
-    <defName>SimplyWestern</defName>
+    <defName>SimplyWesternBody</defName>
     <label>Western Dragon</label>
     <corePart>
       <def>Torso</def>
@@ -49,14 +49,6 @@
         <li>
           <def>Stomach</def>
           <coverage>0.025</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Heart</def>
-          <coverage>0.020</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -131,6 +123,15 @@
 								<li>HeadAttackTool</li>
               </groups>
               <parts>
+              <li>
+			          <def>SimplyWesternHorns</def> <!--HORNS-->
+                <coverage>0.07</coverage>
+			          <height>Top</height>			 
+                <groups>
+                  <li>UpperHead</li>
+                  <li>HornAttackTool</li>			  
+                </groups>
+                </li> 
                 <li>
                   <def>Skull</def>
                   <coverage>0.18</coverage>
@@ -195,39 +196,21 @@
                 </li>
                 <li>
                   <def>Jaw</def>
-				  <customLabel>top right mandible</customLabel>
-                  <coverage>0.05</coverage>
+                  <coverage>0.15</coverage>
                   <groups>
                     <li>Teeth</li>
                     <li>FullHead</li>
                   </groups>
-                </li>
-                <li>
-                  <def>Jaw</def>
-				  <customLabel>bottom right mandible</customLabel>
-                  <coverage>0.05</coverage>
-                  <groups>
-                    <li>Teeth</li>
-                    <li>FullHead</li>
-                  </groups>
-                </li>
-                <li>
-                  <def>Jaw</def>
-				  <customLabel>top left mandible</customLabel>
-                  <coverage>0.05</coverage>
-                  <groups>
-                    <li>Teeth</li>
-                    <li>FullHead</li>
-                  </groups>
-                </li>
-                <li>
-                  <def>Jaw</def>
-				  <customLabel>bottom left mandible</customLabel>
-                  <coverage>0.05</coverage>
-                  <groups>
-                    <li>Teeth</li>
-                    <li>FullHead</li>
-                  </groups>
+                    <parts>
+                    <li>
+                      <def>Tongue</def>
+                      <coverage>0</coverage>
+                      <depth>Inside</depth>
+                      <groups>
+                        <li>FullHead</li>
+                      </groups>
+                    </li>
+                  </parts>
                 </li>
               </parts>
             </li>
@@ -297,11 +280,21 @@
                     </li>
                     <li>
                       <def>Finger</def>
+                      <customLabel>left ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
                       <customLabel>left middle finger</customLabel>
                       <coverage>0.08</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
+                        <li>MiddleFingers</li>
                       </groups>
                     </li>
                     <li>
@@ -392,11 +385,21 @@
                     </li>
                     <li>
                       <def>Finger</def>
+                      <customLabel>right ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
                       <customLabel>right middle finger</customLabel>
                       <coverage>0.08</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>RightHand</li>
+                        <li>MiddleFingers</li>
                       </groups>
                     </li>
                     <li>
@@ -425,6 +428,14 @@
         </li>
         <li>
           <def>Waist</def>
+          <coverage>0</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Waist</li>
+          </groups>
+        </li>
+        <li>
+          <def>SimplyWesternTail</def> <!--Tail-->
           <coverage>0</coverage>
           <height>Bottom</height>
           <groups>
@@ -468,6 +479,22 @@
               <parts>
                 <li>
                   <def>Toe</def>
+                  <customLabel>left little toe</customLabel>
+                  <coverage>0.06</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>left third toe</customLabel>
+                  <coverage>0.08</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
                   <customLabel>left second toe</customLabel>
                   <coverage>0.09</coverage>
                   <groups>
@@ -476,7 +503,7 @@
                 </li>
                 <li>
                   <def>Toe</def>
-                  <customLabel>left toe</customLabel>
+                  <customLabel>left big toe</customLabel>
                   <coverage>0.09</coverage>
                   <groups>
                     <li>Feet</li>
@@ -523,7 +550,7 @@
               <parts>
                 <li>
                   <def>Toe</def>
-                  <customLabel>right second toe</customLabel>
+                  <customLabel>right little toe</customLabel>
                   <coverage>0.06</coverage>
                   <groups>
                     <li>Feet</li>
@@ -531,7 +558,23 @@
                 </li>
                 <li>
                   <def>Toe</def>
-                  <customLabel>right toe</customLabel>
+                  <customLabel>right third toe</customLabel>
+                  <coverage>0.08</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>right second toe</customLabel>
+                  <coverage>0.09</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>right big toe</customLabel>
                   <coverage>0.09</coverage>
                   <groups>
                     <li>Feet</li>

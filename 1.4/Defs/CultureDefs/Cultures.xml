@@ -10,19 +10,19 @@
     <iconPath>World/WorldObjects/Expanding/Village</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeitySangheili</deityNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeitySimplyDragon</deityNameMaker>
     <!--<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>!-->
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerSangheili</deityTypeMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerSimplyDragon</deityTypeMaker>
     <!--<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>-->
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginSpacer</li>
     </allowedPlaceTags>
-    <preferredWeaponClasses>
+    <!--<preferredWeaponClasses>
       <noble>Ultratech</noble>
       <despised>Neolithic</despised>
-    </preferredWeaponClasses>
+    </preferredWeaponClasses> -->
     <thingStyleCategories>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Techist</category>

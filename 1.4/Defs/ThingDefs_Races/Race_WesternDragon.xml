@@ -299,7 +299,7 @@
         <leatherDef>Leather_Dragon</leatherDef>
 	      <nameGenerator>NamerWesternMale</nameGenerator>
         <nameGeneratorFemale>NamerWesternFemale</nameGeneratorFemale> 
-        <body>WesternDragon</body>
+        <body>SimplyWesternBody</body>
         <bloodDef>FilthBloodDragon</bloodDef>	
         <meatColor>(170, 60, 59)</meatColor>
         <baseBodySize>1.3</baseBodySize>
@@ -394,7 +394,7 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-						<li>SangheiliRefugee</li>
+						<li>WesternRefugee</li>
                     </kindDefs>
                     <chance>40.0</chance>
                 </li>
@@ -404,13 +404,13 @@
 				<pawnKindEntries>
 					<li>
                     <kindDefs>
-						<li>SangheiliColonist</li>
+						<li>WesternColonist</li>
                     </kindDefs>
                     <chance>10.0</chance>
 					</li>
 				</pawnKindEntries>
 					<factionDefs>
-						<li>SangheiliPlayerColony</li> 
+						<li>WesternDragonPlayerColony</li> 
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -419,13 +419,13 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-								<li>SangheiliColonist</li>
+								<li>WesternColonist</li>
                             </kindDefs>
                             <chance>50.0</chance>
                         </li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>SangheiliPlayerColony</li> 
+                        <li>WesternDragonPlayerColony</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>

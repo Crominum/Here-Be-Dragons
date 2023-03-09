@@ -25,26 +25,26 @@
   </RulePackDef> -->
 	
 	<RulePackDef>
-		<defName>NamerSangheiliMale</defName>
+		<defName>NamerWesternMale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[SangheiliNameMale] [SangheiliNameLast]</li>
+				<li>name->[WesternNameMale] [WesternNameLast]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SangheiliNameMale->Sangheili_Names/SangheiliMale</li>
-				<li>SangheiliNameLast->Sangheili_Names/Sangheililast</li>
+				<li>WesternNameMale->SimplyDragon_Names/WesternMale</li>
+				<li>WesternNameLast->SimplyDragon_Names/Westernlast</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
   <RulePackDef>
-		<defName>NamerSangheiliFemale</defName>
+		<defName>NamerWesternFemale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[SangheiliNameFemale] [SangheiliNameLast]</li>
+				<li>name->[WesternNameFemale] [WesternNameLast]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>SangheiliNameFemale->Sangheili_Names/SangheiliFemale</li>
-				<li>SangheiliNameLast->Sangheili_Names/Sangheililast</li>
+				<li>WesternNameFemale->SimplyDragon_Names/WesternFemale</li>
+				<li>WesternNameLast->SimplyDragon_Names/Westernlast</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
@@ -68,15 +68,15 @@
 
 
  <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
-    <defName>NamerDeitySangheili</defName>
+    <defName>NamerDeitySimplyDragon</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_deityName->[sangdeity]</li>
+        <li>r_deityName->[dragondeity]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
-          <keyword>sangdeity</keyword>
-          <path>Sangheili_Names/DeitySangheili</path>
+          <keyword>dragondeity</keyword>
+          <path>SimplyDragon_Names/DeityDragon</path>
         </li>
       </rulesRaw>
     </rulePack>
@@ -92,7 +92,7 @@
 	</RulePackDef> -->
 
  <RulePackDef>
-    <defName>DeityTypeMakerSangheili</defName>
+    <defName>DeityTypeMakerSimplyDragon</defName>
     <include>
       <li>GlobalUtility</li>
     </include>

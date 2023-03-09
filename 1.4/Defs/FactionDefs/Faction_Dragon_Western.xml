@@ -2,10 +2,10 @@
 <Defs>
 
 	<FactionDef>
-		<defName>SangheiliFaction</defName>
-		<label>Sangheili State</label>
-		<description>A developed colony collectively owned by the Sangheili race.</description>
-		<pawnsPlural>Sangheilis</pawnsPlural>
+		<defName>WesternFaction</defName>
+		<label>Western State</label>
+		<description>A developed colony collectively owned by the Western dragons race.</description>
+		<pawnsPlural>Western Dragons</pawnsPlural>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
@@ -15,14 +15,14 @@
 		<leaderTitle>Kaidon</leaderTitle>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<factionIconPath>World/SangheiliBase</factionIconPath>
+		<factionIconPath>World/WesternBase</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<techLevel>Ultra</techLevel>
 		<backstoryCategories>
-		    <li>SangheiliBackstory</li>
+		    <li>WesternBackstory</li>
 		</backstoryCategories>
 		<allowedCultures>
-			<li>SangheiliCulture</li>
+			<li>WesternDragonCulture</li>
 		</allowedCultures>
 		<visitorTraderKinds>
 			<li>Visitor_Outlander_Standard</li>
@@ -62,44 +62,34 @@
 			<li>
 				<kindDef>Combat</kindDef>
 				<options>
-					<SangheiliGuard>90</SangheiliGuard>
-					<SangheiliMinor>120</SangheiliMinor>
-					<SangheiliSpecOps>180</SangheiliSpecOps>
-					<SangheiliKaidon>300</SangheiliKaidon>
+					<WesternMinor>120</WesternMinor>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<SangheiliTrader>1</SangheiliTrader>
+					<WesternTrader>1</WesternTrader>
 				</traders>
 				<carriers>
 					<Muffalo>2</Muffalo>
 					<Dromedary>2</Dromedary>
 				</carriers>
 				<guards>
-					<SangheiliGuard>80</SangheiliGuard>
-					<SangheiliMinor>120</SangheiliMinor>
-					<SangheiliSpecOps>200</SangheiliSpecOps>
+					<WesternGuard>80</WesternGuard>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<SangheiliColonist>50</SangheiliColonist>
-					<SangheiliGuard>90</SangheiliGuard>
-					<SangheiliMinor>200</SangheiliMinor>
-					<SangheiliKaidon>250</SangheiliKaidon>
+					<WesternColonist>50</WesternColonist>
+					<WesternGuard>90</WesternGuard>
 				</options>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<SangheiliColonist>50</SangheiliColonist>
-					<SangheiliGuard>100</SangheiliGuard>
-					<SangheiliSpecOps>170</SangheiliSpecOps>
-					<SangheiliMinor>200</SangheiliMinor>
-					<SangheiliKaidon>250</SangheiliKaidon>
+					<WesternColonist>50</WesternColonist>
+					<WesternGuard>100</WesternGuard>
 				</options>
 			</li>
 		</pawnGroupMakers>

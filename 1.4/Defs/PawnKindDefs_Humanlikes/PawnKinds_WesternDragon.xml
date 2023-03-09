@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ============================ Sangheili Base ========================== -->
+  <!-- ============================ Western Dragon Base ========================== -->
 
   <PawnKindDef Name="WesternDragonBase" Abstract="True">
-    <defaultFactionType>SangheiliFaction</defaultFactionType>
+    <defaultFactionType>WesternFaction</defaultFactionType>
     <race>SimplyWestern</race>
     <nameMaker>NamerWesternMale</nameMaker>
     <nameMakerFemale>NamerWesternFemale</nameMakerFemale>
@@ -35,7 +35,7 @@
 	<initialResistanceRange>11~18</initialResistanceRange>
   </PawnKindDef>
   
-  <!-- ============================ Sangheili Civilian Base ========================== -->
+  <!-- ============================ Western Dragon Civilian Base ========================== -->
 
   <PawnKindDef Name="WesternCivBase" ParentName="WesternDragonBase" Abstract="True">
     <combatPower>25</combatPower>
@@ -111,9 +111,9 @@
 	<minGenerationAge>200</minGenerationAge>
     <factionLeader>true</factionLeader>
 	<initialResistanceRange>15~25</initialResistanceRange>
-    <apparelTags>
+    <!--<apparelTags>
 			<li>SangheiliUnderArmor</li>
-    </apparelTags>
+    </apparelTags> -->
     <apparelMoney>
       <min>5000</min>
       <max>40000</max>
@@ -125,13 +125,13 @@
 	<backstoryFilters>
       <li>
         <categories>
-          <li>SangheiliBackstory</li>
+          <li>WesternBackstory</li>
         </categories>
         <commonality>0.2</commonality>
       </li>
       <li>
         <categories>
-		  <li>SangheiliSpecialBackstory</li>
+		  <li>WesternSpecialBackstory</li>
         </categories>
         <commonality>0.8</commonality>
       </li>
@@ -141,12 +141,6 @@
 	    <li>MedievalMeleeAdvanced</li>
 	    <li>GunHeavy</li>
 	    <li>IndustrialGunAdvanced</li>
-	    <li>SpacerGun</li>
-      <li>MechanoidGunMedium</li>
-	    <li>Covenant_NeedleRifle</li>
-	    <li>Covenant_BeamRifle</li>
-	    <li>Covenant_FuelRodCannon</li>
-	    <li>Covenant_ConcussionRifle</li>
     </weaponTags>
     <techHediffsMoney>
       <min>300</min>
@@ -178,23 +172,23 @@
     </inventoryOptions>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="SangheiliCivBase">
-    <defName>SangheiliTrader</defName>
+  <PawnKindDef ParentName="WesternCivBase">
+    <defName>WesternTrader</defName>
     <label>Merchant</label>
     <trader>true</trader>
   </PawnKindDef>
 
-    <PawnKindDef ParentName="SangheiliCivBase">
-    <defName>SangheiliRefugee</defName>
+    <PawnKindDef ParentName="WesternCivBase">
+    <defName>WesternRefugee</defName>
     <label>refugee</label>
   </PawnKindDef>
   
 
   
-  <!-- ============================ Sangheili Security ========================== -->
+  <!-- ============================ Western Security ========================== -->
   
-  <PawnKindDef ParentName="SangheiliCivBase">
-    <defName>SangheiliGuard</defName>
+  <PawnKindDef ParentName="WesternCivBase">
+    <defName>WesternGuard</defName>
     <label>guard</label>
     <combatPower>50</combatPower>
     <maxGenerationAge>100</maxGenerationAge>
@@ -211,18 +205,12 @@
       <max>3000</max>
     </weaponMoney>
     <apparelTags>
-    	<li>SangheiliUnderArmor</li>
-			<li>SangheiliMinorArmor</li>
       <li>BeltDefense</li>
     </apparelTags>
     <weaponTags>
 	  <li>SpacerGun</li>
 	  <li>GunHeavy</li>
 	  <li>MedievalMeleeDecent</li>
-	  <li>Covenant_PlasmaPistol</li>
-	  <li>Covenant_PlasmaRifle</li>
-	  <li>Covenant_Repeater</li>
-	  <li>Covenant_EnergySword</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -246,12 +234,12 @@
   </PawnKindDef>
   
  
-  <!-- ============================ Sangheili Military Base ========================== -->
+  <!-- ============================ Western Military Base ========================== -->
   
-  <PawnKindDef Name="SangheiliMilBase" ParentName="SangheiliBase" Abstract="True">
+  <PawnKindDef Name="WesternMilBase" ParentName="WesternDragonBase" Abstract="True">
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <isFighter>true</isFighter>
-	<race>Alien_Sangheili</race>
+	<race>SimplyWestern</race>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
 	<minGenerationAge>40</minGenerationAge>
@@ -263,13 +251,13 @@
 	<backstoryFilters>
       <li>
         <categories>
-          <li>SangheiliBackstory</li>
+          <li>WesternBackstory</li>
         </categories>
         <commonality>0.6</commonality>
       </li>
       <li>
         <categories>
-		  <li>SangheiliSpecialBackstory</li>
+		  <li>WesternSpecialBackstory</li>
         </categories>
         <commonality>0.3</commonality>
       </li>
@@ -287,10 +275,10 @@
       </li>
     </backstoryFilters>
     <apparelAllowHeadgearChance>50</apparelAllowHeadgearChance>
-    <apparelTags>
+    <!--<apparelTags>
       <li>SangheiliUnderArmor</li>
       <li>BeltDefense</li>
-    </apparelTags>
+    </apparelTags> -->
     <apparelMoney>
       <min>3000</min>
       <max>12000</max>
@@ -305,10 +293,6 @@
 	    <li>SpacerGun</li>
 	    <li>GunHeavy</li>
 	    <li>IndustrialGunAdvanced</li>
-	    <li>Covenant_PlasmaRifle</li>
-	    <li>Covenant_Repeater</li>
-	    <li>Covenant_EnergySword</li>
-	    <li>Covenant_Carbine</li>
     </weaponTags>
     <techHediffsMoney>
       <min>300</min>
@@ -340,105 +324,25 @@
 	<initialResistanceRange>15~24</initialResistanceRange>
   </PawnKindDef>
   
-  <!-- ============================ Sangheili Military ========================== -->
+  <!-- ============================ Western Dragon Military ========================== -->
   
-  <PawnKindDef ParentName="SangheiliMilBase">
-    <defName>SangheiliMinor</defName>
+  <PawnKindDef ParentName="WesternMilBase">
+    <defName>WesternMinor</defName>
     <label>Minor</label>
-    <apparelTags>
-      <li>SangheiliMinorArmor</li>
-    </apparelTags>
+    <!--<apparelTags>
+      <li>WesternMinorArmor</li>
+    </apparelTags> -->
     <combatPower>100</combatPower>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="SangheiliMilBase">
-    <defName>SangheiliMajor</defName>
+  <PawnKindDef ParentName="WesternMilBase">
+    <defName>WesternMajor</defName>
     <label>Major</label>
-    <apparelTags>
-      <li>SangheiliMajorArmor</li>
-    </apparelTags>
+    <!--<apparelTags>
+      <li>WesternMajorArmor</li>
+    </apparelTags>-->
     <combatPower>170</combatPower>
   </PawnKindDef>
   
-
-  <PawnKindDef ParentName="SangheiliMilBase">
-    <defName>SangheiliSpecOps</defName>
-    <label>Spec Ops</label>
-    <combatPower>235</combatPower>
-    <minGenerationAge>50</minGenerationAge>
-	<initialResistanceRange>18~25</initialResistanceRange>
-    <gearHealthRange>
-      <min>0.9</min>
-      <max>2.3</max>
-    </gearHealthRange>
-    <apparelTags>
-      <li>BeltDefense</li>
-			<li>SangheiliUltraArmor</li>
-    </apparelTags>
-    <apparelMoney>
-      <min>1000</min>
-      <max>26000</max>
-    </apparelMoney>
-    <weaponMoney>
-      <min>1400</min>
-      <max>28000</max>
-    </weaponMoney>
-	<backstoryFilters>
-      <li>
-        <categories>
-          <li>SangheiliBackstory</li>
-        </categories>
-        <commonality>0.2</commonality>
-      </li>
-      <li>
-        <categories>
-		  <li>SangheiliSpecialBackstory</li>
-        </categories>
-        <commonality>0.8</commonality>
-      </li>
-    </backstoryFilters>
-    <weaponTags>
-      <li>NonNeolithicOnlyMelee</li>
-      <li>MedievalMeleeBasic</li>
-	    <li>MedievalMeleeDecent</li>
-	    <li>MedievalMeleeAdvanced</li>
-	    <li>GunHeavy</li>
-	    <li>IndustrialGunAdvanced</li>
-	    <li>SpacerGun</li>
-      <li>MechanoidGunMedium</li>
-	    <li>Covenant_NeedleRifle</li>
-	    <li>Covenant_BeamRifle</li>
-	    <li>Covenant_FuelRodCannon</li>
-	    <li>Covenant_ConcussionRifle</li>
-    </weaponTags>
-    <techHediffsMoney>
-      <min>300</min>
-      <max>10000</max>
-    </techHediffsMoney>
-    <techHediffsTags>
-	    <li>Advanced</li>
-      <li>AdvancedWeapon</li>
-    </techHediffsTags>
-      <techHediffsChance>0.08</techHediffsChance>
-      <inventoryOptions>
-      <skipChance>0.8</skipChance>
-      <subOptionsChooseOne>
-        <li>
-          <thingDef>Silver</thingDef>
-          <countRange>
-            <min>1800</min>
-            <max>4000</max>
-          </countRange>
-        </li>
-        <li>
-          <thingDef>MedicineUltratech</thingDef>
-          <countRange>
-            <min>1</min>
-            <max>2</max>
-          </countRange>
-        </li>
-      </subOptionsChooseOne>
-    </inventoryOptions>
-  </PawnKindDef>
 
 </Defs>
